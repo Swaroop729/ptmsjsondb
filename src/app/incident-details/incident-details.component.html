@@ -1,0 +1,39 @@
+<div class="container widthclass" id="Incident-details">
+  <div class="card card-body">
+    <div class="container">
+      <div class="row">
+        <h6>Incident Heading : {{Incident.IncidentId}}</h6>
+      </div>  
+      <div class="row">
+        Space for comments : {{Incident.Comment}}
+      </div>
+      <div class="row">
+        <div class="col">Start Date : {{Incident.CreatedDate}}</div>
+        <div class="col">End Date{{Incident.ResolutionDate}}</div>
+      </div>
+      <div class="row">
+        <h6>Assign To: </h6>
+      </div>
+      <div class="row">
+        <h6>Attached files : </h6>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-primary waves-light" mdbRippleRadius>
+            <i class="fa fa-magic mr-1"></i> Save</button>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary waves-light" mdbRippleRadius>
+            <i class="fa fa-magic mr-1"></i> Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br/>
+  <br/>
+  <div class="card card-body">
+
+  </div>
+
+</div>

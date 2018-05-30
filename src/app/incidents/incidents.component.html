@@ -1,0 +1,49 @@
+
+  <div class="row widthclass">
+    <div class="col">
+      <div *ngFor="let item of Incidents">
+        <div class="card card-body">
+          <!-- <div class="card-title"> -->
+            <div class="row">
+              <div class="col">
+                <strong>Incident Id : {{item.IncidentId}}</strong>
+              </div>
+              <div class="col">
+                <strong> Application Name : {{item.ApplicationName}}</strong>
+              </div>
+              <div class="col">
+                  <i class="fa fa-bolt" aria-hidden="true"></i>
+                  <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                  <a [routerLink]="['/IncidentDetail',item.IncidentId]">
+                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                  </a>
+                  <i class="fa fa-heart" aria-hidden="true"></i>                    
+                  <i class="fa fa-remove" aria-hidden="true"></i>
+              </div>
+            </div>
+          
+          <div class="row">
+            <div class="col">
+                <input-editor label="First Name" id="txtname" [(ngModel)]="item.Comment" type="text" placeholder="Enter First Name" (onSave)="UpdateIncident(item)"></input-editor>
+              Comment : {{item.Comment}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped" style="width:40%">
+                  Free Space Warning
+                </div>
+                <div class="progress-bar progress-bar-stripedr bg-warning" style="width:10%">
+                </div>
+                <div class="progress-bar progress-bar-striped bg-danger" style="width:20%">
+                  Danger
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <br/>
+      </div>
+    </div>
+  </div>

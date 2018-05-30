@@ -1,0 +1,110 @@
+<!-- <div class="widthclass">
+    <h4>Task Board</h4>
+</div> -->
+<div class="container-fluid TaskManagement responsive">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card card-body" dnd-sortable-container [dropZones]="['boxers-zone']" [sortableData]="Incidents">
+                <div>
+                    <div class="row">
+                        <div class="col-10">
+                                <h5 class="card-title">Upcoming Tasks 
+                                        <span class="badge badge-success">Info</span>    
+                                </h5>
+                        </div>
+                        <div class="col-2">
+                                <i class="fa fa-bolt" aria-hidden="true"></i>                            
+                        </div>
+                    </div>
+                </div>
+                                                
+                <!-- <ul class="list-group" > -->
+                    <div class="card card-body" *ngFor="let item of Incidents; let i = index" class="list-group-item" dnd-sortable [sortableIndex]="i">
+                        <div>
+                            <div class="row">
+                                <div class="col-10">
+                                        <h6> INC : {{item.IncidentId}}</h6>                                    
+                                </div>
+                                <div class="col-2">
+                                        <i class="fa fa-list-ul" aria-hidden="true"></i>                                 
+                                </div>
+                            </div>                                
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                        <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                                        <i class="fa fa-rss" aria-hidden="true"></i>
+                                        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                                        <i class="fa fa-align-left" aria-hidden="true"></i>
+                                        <i class="fa fa-remove" aria-hidden="true"></i>
+                                        <i class="fa fa-heart" aria-hidden="true"></i>                                               
+                                    </div>
+                                </div>
+                        
+
+                           
+                        </div>
+                    </div>
+                <!-- </ul> -->
+                <!-- <div class="flex-row">
+                </div> -->
+            </div>
+        </div>
+        <div class="col-sm-4">
+                <div class="card card-body" dnd-sortable-container [dropZones]="['boxers-zone']" [sortableData]="Complete">
+                    <h5 class="card-title"> Complete Tasks
+                            <span class="badge badge-warning">Info</span> 
+                    </h5>
+                    <!-- <ul class="list-group" > -->
+                        <div class="card card-body" *ngFor="let item of Complete; let i = index" class="list-group-item" dnd-sortable [sortableIndex]="i">
+                            <div>
+                                <div class="row">
+                                    <div class="col-10">
+                                            <h6> INC : {{item.IncidentId}}</h6>                                    
+                                    </div>
+                                    <div class="col-2">
+                                            <i class="fa fa-list-ul" aria-hidden="true"></i>                                 
+                                    </div>
+                                </div>                                
+                                    <div class="row">
+                                        <div class="col">
+                                            <i class="fa fa-bolt" aria-hidden="true"></i>
+                                            <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                                            <i class="fa fa-rss" aria-hidden="true"></i>
+                                            <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                                            <i class="fa fa-align-left" aria-hidden="true"></i>
+                                            <i class="fa fa-remove" aria-hidden="true"></i>
+                                            <i class="fa fa-heart" aria-hidden="true"></i>                                               
+                                        </div>
+                                    </div>
+                            
+    
+                               
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-sm-4">
+            <div class="card card-body" dnd-sortable-container [dropZones]="['boxers-zone']" [sortableData]="InProgress">
+                <h5 class="card-title">InProgress Tasks
+                        <span class="badge badge-danger">Info</span> 
+                </h5>
+                <ul class="list-group" >
+                    <li *ngFor="let item of InProgress; let i = index" class="list-group-item" dnd-sortable [sortableIndex]="i">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+
+<header>
+    <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark bg-indigo scrolling-navbar intro-fixed-nav" [containerInside]="false">
+        <logo>
+            <a class="logo navbar-brand" routerLink="/Home/"><strong>Navbar</strong></a>
+        </logo>
+        <links>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active waves-light" routerLinkActive="active current" mdbRippleRadius>
+                    <a class="nav-link" routerLink="/Home/" >Home </a>
+                </li>
+                <li class="nav-item waves-light" routerLinkActive="active current" mdbRippleRadius>
+                    <a class="nav-link" routerLink="/Incident/">Incident</a>
+                </li>
+                <li class="nav-item waves-light" routerLinkActive="active current" mdbRippleRadius>
+                    <a class="nav-link" routerLink="/Incidents/">Incidents</a>
+                </li>
+                <li class="nav-item waves-light" routerLinkActive="active current" mdbRippleRadius>
+                        <a class="nav-link" routerLink="/TaskManagement/">Task Management</a>
+                </li>
+                <!-- <li class="nav-item waves-light" routerLinkActive="active current" mdbRippleRadius>
+                        <a class="nav-link" routerLink="/IncidentDetail/:IncidentId">Incident Detail</a>
+                </li> -->
+                <li class="nav-item waves-light" routerLinkActive="active current" mdbRippleRadius>
+                    <a class="nav-link" routerLink="/WorkGraph">Work Graph</a>
+            </li>
+            </ul>
+        </links>
+    </mdb-navbar>
+</header>   

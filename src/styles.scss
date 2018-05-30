@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import "~angular-vertical-timeline/dist/vertical-timeline.css";
+@import "../node_modules/ng2-dnd/bundles/style.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+
+
+.widthclass{
+    width: 95%;
+    position: absolute;
+    left:38px;
+    display:inline-block;
+    top:76px;
+}
+
+.TaskManagement{
+    position: absolute;
+    display:inline-block;
+    top:76px;
+}
+.mat-expansion-panel-header{
+    height: 80px !important;
+}
+
+.progress .progress-bar {
+    height: 20px !important;
+}
+
+.progress{
+    height: 20px !important;
+}
+
+.view {
+    background: url("../Images/buildings.jpg") no-repeat center center;
+    // background: url("https://mdbootstrap.com/img/Photos/Others/img (50).jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.panelheaderheight .mat-expansion-panel-header {
+    height: 80px !important;
+}
+
+.my{
+    // background-color: red;
+    top:0px;
+    position:absolute;
+    height:100%;
+    width:100%;
+    display: inline-block;
+
+}
+        
+
+.view1 {
+    // background: url("https://mdbootstrap.com/img/Photos/Others/img (51).jpg")no-repeat center center;
+    background: url("../Images/buildings.jpg") no-repeat center center;
+    background-size: cover;
+    margin-top: -56px;
+}
+.navbar {
+    z-index: 1;
+}
+        
