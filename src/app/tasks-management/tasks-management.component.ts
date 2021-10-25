@@ -20,6 +20,8 @@ export class TasksManagementComponent implements OnInit {
       this.Incidents=Response.json()
       this.Complete=Response.json()
     })
+
+    // just an individual commit added again
    }
 
 
